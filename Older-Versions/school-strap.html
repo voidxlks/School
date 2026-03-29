@@ -2,91 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>voidxlks School (Old Version)</title>
+  <title>Access Denied</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-    }
-
-    header {
-      background: #222;
-      color: white;
-      padding: 15px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      color: #00ff00;
+      font-family: "Courier New", monospace;
       text-align: center;
-      font-size: 24px;
-    }
-
-    .container {
-      width: 80%;
-      margin: 20px auto;
     }
 
     .box {
-      border: 1px solid #ccc;
-      padding: 15px;
-      margin-bottom: 15px;
-      background: #fafafa;
+      max-width: 700px;
+      border: 2px solid red;
+      padding: 30px;
+      background: #050505;
     }
 
-    h2 {
-      margin-top: 0;
+    h1 {
+      color: red;
+      margin-bottom: 20px;
     }
 
-    button {
-      padding: 8px 15px;
-      border: 1px solid black;
-      background: white;
-      cursor: pointer;
-    }
-
-    #msg {
-      margin-top: 10px;
-      font-weight: bold;
+    p {
+      margin: 10px 0;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-<header>voidxlks School</header>
+<div class="box">
+  <h1>⚠ ACCESS DENIED ⚠</h1>
 
-<div class="container">
+  <p>I told you not to go to this page.</p>
+  <p>This area is restricted and monitored.</p>
 
-  <div class="box">
-    <h2>Welcome</h2>
-    <p>This is an older version of the voidxlks school system.</p>
-  </div>
+  <p>Unauthorized access has been detected.</p>
+  <p>Your activity may be logged.</p>
 
-  <div class="box">
-    <h2>Classes</h2>
-    <p>- Coding Basics</p>
-    <p>- Projects</p>
-    <p>- Creative Work</p>
-  </div>
+  <br>
 
-  <div class="box">
-    <h2>Join</h2>
-    <input type="text" id="name" placeholder="Enter your name">
-    <button onclick="join()">Join</button>
-    <div id="msg"></div>
-  </div>
+  <p><strong>This content is blocked by the FBI.</strong></p>
 
+  <br>
+
+  <p>Please leave this page immediately.</p>
 </div>
-
-<script>
-function join() {
-  var name = document.getElementById("name").value;
-
-  if (name === "") {
-    alert("Enter your name");
-    return;
-  }
-
-  document.getElementById("msg").innerText =
-    name + " joined voidxlks school!";
-}
-</script>
 
 </body>
 </html>
