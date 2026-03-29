@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>voidxlks School (Old Version)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #fafafa;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    button {
+      padding: 8px 15px;
+      border: 1px solid black;
+      background: white;
+      cursor: pointer;
+    }
+
+    #msg {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>voidxlks School</header>
+
+<div class="container">
+
+  <div class="box">
+    <h2>Welcome</h2>
+    <p>This is an older version of the voidxlks school system.</p>
+  </div>
+
+  <div class="box">
+    <h2>Classes</h2>
+    <p>- Coding Basics</p>
+    <p>- Projects</p>
+    <p>- Creative Work</p>
+  </div>
+
+  <div class="box">
+    <h2>Join</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="join()">Join</button>
+    <div id="msg"></div>
+  </div>
+
+</div>
+
+<script>
+function join() {
+  var name = document.getElementById("name").value;
+
+  if (name === "") {
+    alert("Enter your name");
+    return;
+  }
+
+  document.getElementById("msg").innerText =
+    name + " joined voidxlks school!";
+}
+</script>
+
+</body>
+</html>
