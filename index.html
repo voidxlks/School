@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>voidxlks School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>VOIDXLKS SCHOOL</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>Welcome to voidxlks school. Learn, build, and improve your skills.</p>
+  </div>
+
+  <div class="card">
+    <h2>Classes</h2>
+    <ul>
+      <li>💻 Coding Basics</li>
+      <li>⚙️ Advanced Projects</li>
+      <li>🚀 Creative Development</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Join the School</h2>
+    <button onclick="joinSchool()">Join Now</button>
+    <div id="message"></div>
+  </div>
+
+</div>
+
+<script>
+function joinSchool() {
+  document.getElementById("message").innerText = "You are now enrolled in voidxlks school!";
+}
+</script>
+
+</body>
+</html>
